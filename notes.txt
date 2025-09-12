@@ -1,0 +1,19 @@
+REST api -> db connection -> CRUD 
+
+1) mysql driver 
+2) spring data jpa 
+
+
+products -> 
+			productId
+			name
+			category
+			qty
+			price 
+			
+entity
+repository 
+
+
+REST API -> @RestController 	
+
