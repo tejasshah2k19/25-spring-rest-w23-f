@@ -13,17 +13,17 @@ public class SessionController {
 
 	@PostMapping("login")
 	public LoginDto login(@RequestBody LoginDto loginDto) {
-		//validation 
-		//authentication 
-		return loginDto;//json
+		// validation
+		// authentication
+		return loginDto;// json
 	}
 
-	//signup api  
-	//jpa , mysql , user en , user repo 
+	// signup api
+	// jpa , mysql , user en , user repo
 	//
-	//android iphone webapp --> 
-	//rest client => POSTMAN
+	// android iphone webapp -->
+	// rest client => POSTMAN
 
-	//POST:new GET:read DELETE:delete PUT:update 
-	
+	// POST:new GET:read DELETE:delete PUT:update
+
 }
