@@ -1,21 +1,29 @@
 package com.controller;
 
+import java.util.HashMap;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dto.LoginDto;
 
 @RestController
+@RequestMapping("/api/public")
 public class SessionController {
 
 	// login api ->
 
 	@PostMapping("login")
-	public LoginDto login(@RequestBody LoginDto loginDto) {
+	public HashMap<String,Object> login(@RequestBody LoginDto loginDto) {
 		// validation
 		// authentication
-		return loginDto;// json
+		HashMap<String, Object> hm = new HashMap<>();
+		hm.put("data", loginDto);
+		hm.put("token", "123");
+		hm.put("profile", loginDto);
+		return hm;// json
 	}
 
 	// signup api
