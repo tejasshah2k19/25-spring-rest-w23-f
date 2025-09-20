@@ -17,3 +17,82 @@ repository
 
 REST API -> @RestController 	
 
+-----------------------------------------------------------------------------
+
+we have two type api 
+	1)public 
+	2)private 
+	
+	public api can access by any one no need of authentication 
+	private api must be access via authentication - login 
+	
+	
+	how to authenticate user in private api? 
+	--token 
+	--user must has token to access private api
+	--in each private api call we will check token is present and valid ? 
+			--if yes then only user can access private api 
+	
+	how to identify api is public or private? 
+	--we can add prefix in all the api 
+	--like we can have public in all the public api 
+	--we can use @RequestMapping to map api in controller 
+	
+	
+	In api calling where to find token ?
+	--header 
+	
+	
+	How server will check token in each api?
+	where we can write logic to check token in all api?
+	--filter 
+	--TokenFilter for this purpose 
+	
+	
+------------------------------------------------------------------------------------	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
